@@ -51,7 +51,7 @@ class BelongsTo extends Relationship {
 	{
 		$model->{$this->foreignKey} = $input;
 
-		$model->__unset($this->field);
+		//$model->__unset($this->field); This line removes the value sent in the request, where it is the dependence FK
 	}
 
 	/**
