@@ -246,7 +246,7 @@
 						}
 						else
 						{
-							var error = typeof response.errors == 'string' ? response.errors : response.errors.join(' ');
+							var error = typeof response.errors == 'string' ? response.errors : response.errors.join('<br/>');
 							self.statusMessage(error).statusMessageType('error');
 						}
 					}
